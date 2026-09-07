@@ -2,10 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Yang | Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header contains your name and the main navigation links. -->
+  <header>
+    <nav class="site-nav">
+      <a class="site-name" href="#home">Andrew Yang</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- The hero section introduces you to visitors. -->
+    <section id="home" class="hero">
+      <p class="eyebrow">Welcome to my portfolio</p>
+      <h1>Where Creativity Meets Code</h1>
+      <p class="intro-text">
+        Developing and learning to create useful and welcoming websites.
+      </p>
+      <a class="button" href="#projects">View my projects</a>
+    </section>
+
+    <!-- The small logo adds a visual break below the hero. -->
+    <div class="logo-container">
+      <img class="site-logo" src="img/logo.png" alt="Andrew Yang logo">
+    </div>
+
+    <!-- This section is for a short personal introduction. -->
+    <section id="about" class="content-section">
+      <h2>About me</h2>
+      <p>
+        Hello! I am Andrew Yang. I am a web developer who enjoys learning new skills and turning ideas into simple and user-friendly web experiences. Let's create awesome things together!
+      </p>
+
+      <h2>
+        My Skills:
+      </h2>
+
+      <!-- Replace these items with your own skills. -->
+      <ul class="skills-list">
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+          <span>HTML</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
+          <span>CSS</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+          <span>Python</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
+          <span>Java</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="">
+          <span>C++</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Add your real projects to these simple project cards later. -->
+    <section id="projects" class="content-section projects-section">
+      <h2>My Projects</h2>
+      <p>Here are a few projects I have worked on.</p>
+
+      <div class="project-list">
+        <article class="project-card">
+          <img class="project-image" src="img/robot.svg" alt="Toy robot illustration">
+          <h3>AI-Agent</h3>
+          <p>A simple AI agent for developers that runs in the command line.</p>
+          <a href="https://github.com/wufferssss/aiagent" target="_blank" rel="noopener noreferrer">View project</a>
+        </article>
+
+        <article class="project-card">
+          <img class="project-image" src="img/asteroid.svg" alt="Asteroid illustration">
+          <h3>Asteroids</h3>
+          <p>A simple game about destroying asteroids in space.</p>
+          <a href="https://github.com/wufferssss/Asteroids" target="_blank" rel="noopener noreferrer">View project</a>
+        </article>
+
+        <article class="project-card">
+          <img class="project-image" src="img/books.svg" alt="Stack of books illustration">
+          <h3>Webflyx</h3>
+          <p>A command line tool for grabbing information on a book from a .txt file</p>
+          <a href="https://github.com/wufferssss/webflyx" target="_blank" rel="noopener noreferrer">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Visitors can use this section to find a way to contact you. -->
+    <section id="contact" class="content-section contact-section">
+      <h2>Get in Touch!</h2>
+      <p>I would be happy to connect and talk about web development.</p>
+
+      <!-- Replace the placeholder links with your own contact details. -->
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:ajy272002@gmail.com">
+            <img src="https://cdn.simpleicons.org/gmail/FFFFFF" alt="">
+            <span>Email</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/andrew-yang-12b3ba236/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="">
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/wufferssss" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="">
+            <span>GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- The footer appears at the bottom of every page. -->
+  <footer>
+    <p>&copy; 2026 Andrew Yang</p>
+  </footer>
 </body>
 </html>

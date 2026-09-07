@@ -1,1 +1,225 @@
-/* Add you CSS here */
+/* Use a simple ocean-inspired color palette across the website. */
+body {
+	margin: 0;
+	background-color: #080B3D;
+	background-image: url("img/background.png");
+	background-repeat: repeat;
+	color: #D9F0F2;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+/* Keep the page content centered and easy to read. */
+main,
+.site-nav {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Use a dark blue header to continue the ocean background. */
+header {
+	background-color: #10145C;
+	padding: 20px 0;
+}
+
+.site-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Style the name and navigation links. */
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.site-name {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.nav-links {
+	display: flex;
+	gap: 20px;
+}
+
+/* Give links a visible hover state. */
+a:hover {
+	color: #6FB3B8;
+}
+
+/* Center the introduction with plenty of breathing room. */
+.hero {
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.eyebrow {
+	color: #6FB3B8;
+	font-weight: bold;
+}
+
+.hero h1 {
+	max-width: 700px;
+	margin: 0 auto 20px;
+	font-size: 2.5rem;
+	line-height: 1.2;
+}
+
+.intro-text {
+	max-width: 600px;
+	margin: 0 auto 30px;
+}
+
+/* Center the logo below the hero section. */
+.logo-container {
+	padding: 0 20px 40px;
+	text-align: center;
+}
+
+/* Keep the logo small so it supports the page without taking over. */
+.site-logo {
+	width: 120px;
+	height: auto;
+}
+
+/* Use this style for important action links. */
+.button {
+	display: inline-block;
+	padding: 10px 18px;
+	border-radius: 4px;
+	background-color: #145374;
+	color: #FFFFFF;
+	border: 1px solid #6FB3B8;
+}
+
+.button:hover {
+	background-color: #2A7F9E;
+	color: #FFFFFF;
+}
+
+/* Keep each main section narrow enough for comfortable reading. */
+.content-section {
+	padding: 70px 20px;
+	margin: 20px auto;
+	background-color: #10145C;
+	border: 2px solid #2A7F9E;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.content-section h2 {
+	margin-top: 0;
+}
+
+/* Display skills in a simple row that wraps on small screens. */
+.skills-list,
+.contact-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	padding: 0;
+	list-style: none;
+}
+
+.skills-list li,
+.contact-list li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	min-width: 80px;
+	padding: 12px 14px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #D9F0F2;
+}
+
+/* Keep the skill and contact icons large and colorless. */
+.skills-list img,
+.contact-list img {
+	width: 48px;
+	height: 48px;
+	filter: grayscale(100%) brightness(1.8);
+}
+
+/* Make the skill and contact labels smaller than the icons. */
+.skills-list span,
+.contact-list span {
+	font-size: 0.85rem;
+}
+
+/* Make each contact link use the same centered layout as the skills. */
+.contact-list a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+}
+
+/* Arrange the project cards in a row on larger screens. */
+.project-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.project-card {
+	flex: 1 1 220px;
+	max-width: 260px;
+	padding: 20px;
+	background-color: #171B70;
+	border: 2px solid #6FB3B8;
+	border-radius: 8px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.project-card h3 {
+	margin-bottom: 8px;
+}
+
+/* Give each project illustration the same size. */
+.project-image {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 120px;
+	padding: 18px;
+	background-color: #0B3346;
+	object-fit: contain;
+}
+
+.contact-section {
+	text-align: center;
+}
+
+/* Center the copyright text at the bottom of the page. */
+footer {
+	padding: 30px 20px;
+	text-align: center;
+	color: #D9F0F2;
+}
+
+/* Stack the navigation on smaller screens. */
+@media (max-width: 600px) {
+	.site-nav {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.hero h1 {
+		font-size: 2rem;
+	}
+
+	/* Use less vertical space for the centered hero on small screens. */
+	.hero {
+		padding: 60px 20px;
+	}
+}
